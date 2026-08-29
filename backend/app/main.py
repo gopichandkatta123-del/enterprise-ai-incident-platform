@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import text
 
 from app.api.routes import router
 from app.core.database import Base, engine
@@ -11,6 +12,13 @@ from app.models.incident_log import IncidentLog
 from app.models.runbook import Runbook
 from app.models.agent_run import AgentRun
 from app.models.remediation_approval import RemediationApproval
+
+
+# Enable pgvector before creating tables that use VECTOR columns.
+with engine.begin() as connection:
+    connection.execute(
+        text("CREATE EXTENSION IF NOT EXISTS vector")
+    )
 
 
 Base.metadata.create_all(bind=engine)
