@@ -2,6 +2,12 @@
 
 A production-style **Agentic AI incident intelligence platform** that uses **FastAPI, LangGraph, OpenAI, PostgreSQL, pgvector, React, and Docker** to investigate production incidents, retrieve relevant operational knowledge, evaluate AI-generated diagnoses, enforce safety guardrails, and require human approval before remediation.
 
+## System Architecture
+
+![Enterprise Agentic AI Incident Intelligence Platform Architecture](docs/images/architecture.png)
+
+The platform uses a layered architecture combining FastAPI backend services, LangGraph-based agent orchestration, OpenAI-powered analysis and embeddings, PostgreSQL with pgvector, human-in-the-loop remediation controls, and a React-based incident operations dashboard.
+
 ---
 
 ## Overview
