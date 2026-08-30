@@ -22,6 +22,20 @@ The platform is deployed on Render and can be explored through the live React da
 
 `Incident → Embedding → LangGraph Investigation → RAG Retrieval → AI Diagnosis → Evaluation → Safety Guardrail → Human Approval → Audit History`
 
+### Production Dashboard
+
+#### Multi-Agent Incident Investigation
+
+![Multi-Agent Incident Investigation](docs/screenshots/agentic-investigation.png)
+
+The production dashboard shows a LangGraph-powered investigation with AI root-cause diagnosis, evaluation scoring, guardrail decisions, and end-to-end execution latency.
+
+#### Safety Guardrails & Human-in-the-Loop
+
+![Safety Guardrails and Human-in-the-Loop](docs/screenshots/human-in-the-loop-guardrail.png)
+
+When supporting evidence is insufficient, automated remediation is withheld and the workflow requires explicit human approval or rejection before proceeding.
+
 ---
 
 ## Overview
