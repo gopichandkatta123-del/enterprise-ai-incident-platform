@@ -97,3 +97,25 @@ Human-in-the-Loop Approval
       |
       v
 Audit / Observability Persistence
+```
+
+---
+
+## Engineering Highlights
+
+- Built a multi-agent incident investigation workflow using **LangGraph**, coordinating supervisor, signal analysis, log analysis, retrieval, diagnosis, evaluation, and remediation agents.
+- Implemented **RAG with OpenAI embeddings and PostgreSQL/pgvector** to retrieve semantically similar incidents and operational runbooks.
+- Developed **FastAPI APIs** for incident ingestion, embedding generation, AI investigation, agent-run observability, and remediation decisions.
+- Added an **AI evaluation and safety guardrail layer** that withholds automated remediation when supporting evidence is insufficient.
+- Implemented **human-in-the-loop approval and rejection workflows** with persistent reviewer decisions and audit history.
+- Built a **React/Vite operations dashboard** for incident investigation, AI diagnosis, confidence scores, guardrail decisions, remediation review, and execution observability.
+- Containerized the application with **Docker** and deployed the frontend, backend, PostgreSQL, and pgvector-based architecture to **Render**.
+
+## Technology Stack
+
+**AI / Agentic AI:** LangGraph, OpenAI, RAG, Embeddings, Multi-Agent Workflows  
+**Backend:** Python, FastAPI, SQLAlchemy, REST APIs  
+**Data / Vector Search:** PostgreSQL, pgvector  
+**Frontend:** React, Vite, JavaScript  
+**Infrastructure:** Docker, Docker Compose, Render  
+**AI Safety & Observability:** Evaluation, Guardrails, Human-in-the-Loop, Agent Run Tracking
