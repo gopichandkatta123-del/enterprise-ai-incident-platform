@@ -8,6 +8,20 @@ A production-style **Agentic AI incident intelligence platform** that uses **Fas
 
 The platform uses a layered architecture combining FastAPI backend services, LangGraph-based agent orchestration, OpenAI-powered analysis and embeddings, PostgreSQL with pgvector, human-in-the-loop remediation controls, and a React-based incident operations dashboard.
 
+## Live Production Demo
+
+The platform is deployed on Render and can be explored through the live React dashboard and FastAPI API documentation.
+
+- **Live Application:** https://incident-ai-frontend-lfh7.onrender.com
+- **FastAPI Swagger Docs:** https://incident-ai-backend-5sum.onrender.com/docs
+- **Backend API:** https://incident-ai-backend-5sum.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier and may require a short cold-start period after inactivity.
+
+### Production Workflow
+
+`Incident → Embedding → LangGraph Investigation → RAG Retrieval → AI Diagnosis → Evaluation → Safety Guardrail → Human Approval → Audit History`
+
 ---
 
 ## Overview
